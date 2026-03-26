@@ -14,7 +14,7 @@ export function Education() {
           </p>
           <p className="text-white-800  text-xs md:text-2xl font-normal mb-8">
             NSUT, Delhi
-            </p>
+          </p>
         </div>
       ),
     },
@@ -23,14 +23,14 @@ export function Education() {
       content: (
         <div>
           <p className="text-white-100  text-xs md:text-3xl font-normal mb-8">
-          Enrolled for Bachelor&apos;s Programme in CSE.
+            Enrolled for Bachelor&apos;s Programme in CSE.
           </p>
           <p className="text-white-800  text-xs md:text-2xl font-normal mb-8">
             AKTU, Ghaziabad
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
-            <IoIosArrowForward /> Secured 8.1 CGPA in B.Tech.
+              <IoIosArrowForward /> Secured 8.1 CGPA in B.Tech.
             </div>
           </div>
         </div>
@@ -48,10 +48,10 @@ export function Education() {
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
-            <IoIosArrowForward /> Scored 9.4 CGPA in 10th
+              <IoIosArrowForward /> Scored 9.4 CGPA in 10th
             </div>
             <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
-            <IoIosArrowForward /> Scored 81% in 12th
+              <IoIosArrowForward /> Scored 81% in 12th
             </div>
           </div>
         </div>
