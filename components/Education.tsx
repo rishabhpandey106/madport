@@ -37,7 +37,7 @@ export function Education() {
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
-              <IoIosArrowForward /> Secured 8.1 CGPA in B.Tech.
+              {/* <IoIosArrowForward /> Secured 8.1 CGPA in B.Tech. */}
             </div>
           </div>
         </div>
@@ -51,15 +51,15 @@ export function Education() {
             Completed both 10th and 12th.
           </p>
           <p className="text-white-800  text-xs md:text-2xl font-normal mb-4">
-            Saraswati Shishu Mandir Senior Secondaary School, Gorakhpur
+            Murad Nagar Public School, Ghaziabad
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
+            {/* <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
               <IoIosArrowForward /> Scored 9.4 CGPA in 10th
             </div>
             <div className="flex gap-2 items-center text-neutral-700  text-xs md:text-3xl">
               <IoIosArrowForward /> Scored 81% in 12th
-            </div>
+            </div> */}
           </div>
         </div>
       ),

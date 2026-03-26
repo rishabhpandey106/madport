@@ -25,7 +25,7 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Feel free to reach out, and let&apos;s discuss how I can help.
         </p>
-        <a href="mailto:rishabhpandey230@gmail.com">
+        <a href="mailto:madhusudanbhardwaj8287@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Rishabh Kumar Pandey
+          Copyright © 2026 Madhusuadan Bhardwaj
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

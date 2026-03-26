@@ -76,7 +76,7 @@ const Hero = () => {
             <FaLocationDot /><span className="pl-2">New Delhi</span>
           </p>
 
-          <a href="https://github.com/rishabhpandey106">
+          <a href="https://github.com/MADHUSUDAN-82">
             <MagicButton
               title="Show my Resume"
               icon={<FaLocationArrow />}

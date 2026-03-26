@@ -5,7 +5,7 @@ import { IoCopyOutline, IoSend } from "react-icons/io5";
 
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 import { FaUser } from "react-icons/fa";
@@ -16,8 +16,13 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { social } from "@/data";
 // import Link from "next/link";
 import { FlipWords } from "./FlipWords";
+import dynamic from "next/dynamic";
 
 // import GridGlobe from "./GridGlobe";
+
+const Lottie = dynamic(() => import("react-lottie"), {
+  ssr: false,
+});
 
 export const BentoGrid = ({
   className,
@@ -59,9 +64,9 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Express", "Typescript", "NodeJS"];
-  const rightLists = ["Cloudflare", "AI/ML", "NextJS"];
-  const middleLists = ["Hono", "Vercel", "MongoDB"];
+  const leftLists = ["Express", "JavaScript", "NodeJS"];
+  const rightLists = ["Cloudflare", "AI/ML", "MongoDB"];
+  const middleLists = ["Python", "Flask", "MongoDB"];
   const words = ["BackEnd Developer", "ML Engineer", "FrontEnd Developer", "Tech Enthusiast"];
 
   const [copied, setCopied] = useState(false);
@@ -139,14 +144,14 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "madhusudanbhardwaj8287@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
 
-  // const handleClick = (link: any) => {
-  //   window.open(link, "_blank");
-  // };
+  const handleClick = (link: any) => {
+    window.open(link, "_blank");
+  };
 
   return (
     <div
@@ -228,7 +233,7 @@ export const BentoGridItem = ({
                   title={info.name}
                   icon={info.img}
                   position="risky"
-                  // handleClick={() => handleClick(info.link)}
+                  handleClick={() => handleClick(info.link)}
                   otherClasses="!bg-[#161A31]"
                 />
               ))}
