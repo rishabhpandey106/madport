@@ -1,8 +1,10 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
+// import MagicButton from "./MagicButton";
+const MagicButton = dynamic(() => import("./MagicButton"), { ssr: false });
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 const Footer = () => {
   return (
@@ -21,7 +23,7 @@ const Footer = () => {
           Let&apos;s <span className="text-purple">work</span> together
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-        Feel free to reach out, and let&apos;s discuss how I can help.
+          Feel free to reach out, and let&apos;s discuss how I can help.
         </p>
         <a href="mailto:rishabhpandey230@gmail.com">
           <MagicButton

@@ -1,5 +1,15 @@
 import { gridItems } from "@/data";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import dynamic from "next/dynamic";
+// import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+const BentoGrid = dynamic(
+  () => import("./ui/BentoGrid").then((mod) => mod.BentoGrid),
+  { ssr: false }
+);
+
+const BentoGridItem = dynamic(
+  () => import("./ui/BentoGrid").then((mod) => mod.BentoGridItem),
+  { ssr: false }
+);
 
 const Grid = () => {
   return (
@@ -11,7 +21,7 @@ const Grid = () => {
             key={i}
             title={item.title}
             description={item.description}
-            // remove icon prop
+            // remove icon propa
             // remove original classname condition
             className={item.className}
             img={item.img}

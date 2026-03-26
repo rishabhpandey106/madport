@@ -1,7 +1,14 @@
 // import Image from "next/image";
+import dynamic from "next/dynamic";
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { Timeline } from "@/components/ui/Timeline";
+// import { Timeline } from "@/components/ui/Timeline";
+
+const Timeline = dynamic(
+  () => import("@/components/ui/Timeline").then((mod) => mod.Timeline),
+  { ssr: false }
+);
+
 
 export function Education() {
   const data = [
