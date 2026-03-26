@@ -1,8 +1,24 @@
+"use client";
+
 import { FaLocationArrow, FaLocationDot } from "react-icons/fa6";
 
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { Spotlight } from "./ui/Spotlight";
+// import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+// import { Spotlight } from "./ui/Spotlight";
 import MagicButton from "./MagicButton";
+import dynamic from "next/dynamic";
+
+const Spotlight = dynamic(
+  () => import("./ui/Spotlight").then((mod) => mod.Spotlight),
+  { ssr: false }
+);
+
+const TextGenerateEffect = dynamic(
+  () =>
+    import("./ui/TextGenerateEffect").then(
+      (mod) => mod.TextGenerateEffect
+    ),
+  { ssr: false }
+);
 
 const Hero = () => {
   return (
